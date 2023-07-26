@@ -9,6 +9,6 @@
     <string name="about">About</string>
     <string name="back_button">Back</string>
     <string name="info_button">Info</string>
-    <string name="about_description">Created by Hamid Siddiqui.</string>
+    <string name="about_description">Created by Hamid Siddiqui.\n\nContribute to this project.\n\nhttps://github.com/inventionsbyhamid/movie-app</string>
     <string name="footer">Footer</string>
 </resources>
