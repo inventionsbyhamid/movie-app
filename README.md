@@ -11,13 +11,13 @@ It simply loads **Movies** data from [TMDB API](https://www.themoviedb.org/)  an
 ## Built With 🛠
 - [Kotlin](https://kotlinlang.org/) - First class and official programming language for Android development.
 - [Jetpack Compose](https://developer.android.com/jetpack/compose) - Android’s recommended modern toolkit for building native UI
-- [Coroutines](https://kotlinlang.org/docs/reference/coroutines-overview.html) - For asynchronous and more..
+- [Coroutines](https://kotlinlang.org/docs/reference/coroutines-overview.html) - For asynchronous operations like network calls.
 - [Navigation](https://developer.android.com/jetpack/compose/navigation) - Using the Android Navigation component libraries for Jetpack Compose
 - [Flow](https://kotlin.github.io/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines.flow/-flow/) - StateFlow and MutableStateFlow
 - [ViewModel](https://developer.android.com/topic/libraries/architecture/viewmodel) - Stores UI-related data that isn't destroyed on UI changes.
 - [Dependency Injection](https://developer.android.com/training/dependency-injection) -
     - [Dagger-Hilt](https://developer.android.com/training/dependency-injection/hilt-android) - Standard library to incorporate dependency injection into an Android application.
-- [Retrofit](https://square.github.io/retrofit/) - A type-safe HTTP client for Android and Java.
+- [Retrofit](https://square.github.io/retrofit/) - A type-safe HTTP client.
 - [Moshi](https://github.com/square/moshi) - A modern JSON library for Kotlin and Java.
 - [Moshi Converter](https://github.com/square/retrofit/tree/master/retrofit-converters/moshi) - A Converter which uses Moshi for serialization to and from JSON.
 - [Coil-kt](https://coil-kt.github.io/coil/) - An image loading library for Android backed by Kotlin Coroutines.

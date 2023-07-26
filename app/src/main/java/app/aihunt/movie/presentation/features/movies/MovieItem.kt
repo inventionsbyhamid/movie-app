@@ -20,6 +20,7 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import app.aihunt.movie.R
@@ -37,7 +38,7 @@ fun MovieItem(
         modifier = modifier
             .padding(horizontal = 8.dp, vertical = 4.dp)
             .clickable { onNavigateToMovieDetailScreen(movie) }) {
-        Row(verticalAlignment = Alignment.CenterVertically) {
+        Row(verticalAlignment = Alignment.CenterVertically, modifier = Modifier.padding(4.dp)) {
             AsyncImage(
                 model = movie.imageUrl,
                 contentDescription = movie.title, modifier = Modifier
@@ -56,7 +57,12 @@ fun MovieItem(
                     fontWeight = FontWeight.Bold
                 )
                 Spacer(Modifier.height(8.dp))
-                Text(text = movie.description)
+                Text(
+                    text = movie.description,
+                    style = MaterialTheme.typography.bodyMedium,
+                    maxLines = 3,
+                    overflow = TextOverflow.Ellipsis
+                )
             }
 
         }
