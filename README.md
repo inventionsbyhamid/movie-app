@@ -1,3 +1,5 @@
+![](media/MovieAppBanner.png)
+
 # Movie App 
 
 **Movie App** is a sample movie listing Android application 📱 built to demonstrate use of *Modern Android development* tools like Jetpack Compose and Kotlin Flows.
