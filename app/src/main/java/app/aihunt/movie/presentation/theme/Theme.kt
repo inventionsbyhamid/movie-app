@@ -1,4 +1,4 @@
-package app.aihunt.movie.ui.theme
+package app.aihunt.movie.presentation.theme
 
 import android.app.Activity
 import android.os.Build

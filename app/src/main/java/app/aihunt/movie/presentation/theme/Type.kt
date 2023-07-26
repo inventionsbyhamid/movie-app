@@ -1,4 +1,4 @@
-package app.aihunt.movie.ui.theme
+package app.aihunt.movie.presentation.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle

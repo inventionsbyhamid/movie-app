@@ -1,6 +1,8 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id 'com.google.dagger.hilt.android'
+    id 'org.jetbrains.kotlin.kapt'
 }
 
 android {
@@ -64,4 +66,41 @@ dependencies {
     androidTestImplementation 'androidx.compose.ui:ui-test-junit4'
     debugImplementation 'androidx.compose.ui:ui-tooling'
     debugImplementation 'androidx.compose.ui:ui-test-manifest'
+
+    def nav_version = "2.6.0"
+    implementation "androidx.navigation:navigation-compose:$nav_version"
+
+    // hilt
+    implementation "com.google.dagger:hilt-android:2.44"
+    kapt "com.google.dagger:hilt-compiler:2.44"
+    implementation "androidx.hilt:hilt-navigation-compose:1.0.0"
+
+    // Coil-kt
+    implementation("io.coil-kt:coil-compose:2.4.0")
+
+    def retrofit_version = "2.9.0"
+    //Moshi
+    implementation "com.squareup.retrofit2:converter-moshi:$retrofit_version"
+    implementation("com.squareup.moshi:moshi-kotlin:1.14.0")
+    // Retrofit
+    implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
+
+    // okhttp
+    implementation(platform("com.squareup.okhttp3:okhttp-bom:4.10.0"))
+    implementation("com.squareup.okhttp3:okhttp")
+    implementation("com.squareup.okhttp3:logging-interceptor")
+
+    def lifecycle_version = "2.6.1"
+    // ViewModel
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
+    // ViewModel utilities for Compose
+    implementation "androidx.lifecycle:lifecycle-viewmodel-compose:$lifecycle_version"
+    // LiveData
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version"
+    // Lifecycle utilities for Compose
+    implementation "androidx.lifecycle:lifecycle-runtime-compose:$lifecycle_version"
+    // Saved state module for ViewModel
+    implementation "androidx.lifecycle:lifecycle-viewmodel-savedstate:$lifecycle_version"
+    // Annotation processor
+    implementation "androidx.lifecycle:lifecycle-common-java8:$lifecycle_version"
 }
