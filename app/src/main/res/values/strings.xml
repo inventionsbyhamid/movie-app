@@ -1,4 +1,14 @@
 <resources>
     <string name="app_name">MovieApp</string>
     <string name="movies_screen">Movies Screen</string>
+    <string name="error_loading_movies">Error loading movies</string>
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancel</string>
+    <string name="movie_list">Movie List</string>
+    <string name="retry">Retry</string>
+    <string name="about">About</string>
+    <string name="back_button">Back</string>
+    <string name="info_button">Info</string>
+    <string name="about_description">Created by Hamid Siddiqui.</string>
+    <string name="footer">Footer</string>
 </resources>

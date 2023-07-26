@@ -7,6 +7,7 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import app.aihunt.movie.presentation.features.movies.MovieDetailScreen
 import app.aihunt.movie.presentation.features.movies.MovieVM
 import app.aihunt.movie.presentation.features.movies.MoviesScreen
 
@@ -24,7 +25,21 @@ fun AppNavHost(
         startDestination = startDestination
     ) {
         composable(route = Screen.Movies.route) {
-            MoviesScreen()
+            MoviesScreen(
+                viewModel = viewModel,
+                onNavigateToMovieDetailScreen = {
+                    viewModel.onMovieClick(it)
+                    navController.navigate(Screen.MovieDetail.route)
+                },
+            )
+        }
+        composable(route = Screen.MovieDetail.route) {
+            MovieDetailScreen(
+                viewModel = viewModel,
+                onBackPress = {
+                    navController.popBackStack()
+                }
+            )
         }
     }
 
